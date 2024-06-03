@@ -41,14 +41,13 @@ body {
   }
 
   &-outline {
-    padding: 16px 24px;
+    padding: 14px 24px;
     background-color: #ffffff;
     color: #563ac9;
     border: solid #563ac9 2px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
-   
     
     &:hover {
       background-color: #563ac9;

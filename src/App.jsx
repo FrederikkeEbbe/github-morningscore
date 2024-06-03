@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
           <p>Start din <em>gratis prøveperiode</em> med det samme, helt uden skjulte betalinger, gebyrer eller kreditkort.</p>
           <div className="input-group">
             <input type="text" placeholder="Indtast din hjemmeside" />
-            <button>Tjek hjemmeside</button>
+            <Link to="/register"><button>Tjek hjemmeside</button></Link>
           </div>
         </div>
       </section>
