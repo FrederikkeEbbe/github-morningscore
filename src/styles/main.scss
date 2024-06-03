@@ -1,0 +1,287 @@
+//Main
+:root {
+  font-family: Proxima Nova, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.button-thick {
+  &-primary {
+    padding: 16px 24px;
+    background-color: #563ac9;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-secondary {
+    padding: 16px 24px;
+    background-color: #2F2077;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &-outline {
+    padding: 16px 24px;
+    background-color: #ffffff;
+    color: #563ac9;
+    border: solid #563ac9 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+   
+    
+    &:hover {
+      background-color: #563ac9;
+      color: #ffffff;
+      
+    }
+  }
+
+  &-opacity {
+    padding: 16px 24px;
+    background-color: rgba(255, 255, 255, 0.25); 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      color: #2F2077;
+      background-color: #ffffff;
+    }
+  }
+  
+}
+
+
+
+//Navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  color: #563ac9;
+
+  &-logo img {
+    height: 24px;
+    align-self: center;
+  }
+
+  &-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #2F2077;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: #2F2077;
+      text-decoration: none;
+      font-weight: 600;
+      align-self: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px 0px;
+      gap: 10px;
+
+      a, .navbar-buttons .btn {
+        text-align: center;
+        padding: 10px;
+        border: none;
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px
+  }
+
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: block;
+    }
+
+    .navbar-links {
+      display: none;
+    }
+
+    .navbar-links.active {
+      display: flex;
+    }
+
+    .navbar-buttons {
+      display: none;
+    }
+
+  }
+}
+
+//HomePage
+.landing-page {
+  background: url('/src/assets/img/space-blured.png') no-repeat center center/cover;
+    
+  .hero-section {
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 48px;
+      color: white;
+  
+      .hero-content {
+        max-width: 600px;
+        
+        h5 {
+          font-weight: 400;
+          color: #73FFEE;
+          margin: 0px;
+        }
+  
+        h1 {
+          font-size: 3rem;
+          margin: 0px 0px 16px 0px;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          margin: 16px 0px;
+  
+          em {
+            font-weight: 800;
+          }
+        }
+  
+        .input-group {
+          display: flex;
+          gap: 16px;
+  
+          input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+          }
+  
+          button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #563ac9;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+  
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  
+    .showreel-section {
+      padding: 50px;
+      text-align: center;
+  
+      h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+  
+      video {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 0px 32px -16px #73FFEE;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-section {
+        justify-content: center;
+        padding: 48px 20px;
+        text-align: center;
+  
+        .hero-content {
+          max-width: 100%;
+  
+          h2 {
+            font-size: 1.5rem;
+          }
+  
+          h1 {
+            font-size: 2.5rem;
+          }
+  
+          p {
+            font-size: 1rem;
+          }
+  
+          .input-group {
+            flex-direction: column;
+          }
+        }
+      }
+  
+      .showreel-section {
+        padding: 30px 24px;
+        
+        h2 {
+          font-size: 1.5rem;
+        }
+  
+        video {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+//
