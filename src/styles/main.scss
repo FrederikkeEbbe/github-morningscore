@@ -198,14 +198,15 @@ body {
   
         .input-group {
           display: flex;
-          gap: 16px;
+          gap: 8px;
+          align-items: center;
   
           input {
             flex: 1;
             padding: 10px;
+            margin: 0;
             border: none;
             border-radius: 4px;
-            font-size: 1rem;
           }
   
           button {
@@ -261,10 +262,6 @@ body {
   
           p {
             font-size: 1rem;
-          }
-  
-          .input-group {
-            flex-direction: column;
           }
         }
       }
