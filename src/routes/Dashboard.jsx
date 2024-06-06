@@ -11,6 +11,31 @@ const Dashboard = () => {
   return (
     <>
       <DashboardNav />
+      <section className='dashboard-section'>
+      <div className='dashboard-hero-container'>
+        <div className='dashboard-hero'>
+          <div className='dashboard-hero__profile'>
+            <img src="/src/assets/img/avatar_limegreen.jpg" alt="" />
+          </div>
+          <div className='dashboard-hero__info'>
+            
+            <div className='dashboard-hero__info--header'>
+              <h1>Velkommen tilbage kaptajn</h1>
+            </div>
+
+            <div className='dashboard-hero__info--buttons'>
+              <button>Guided tour</button>
+              <button id='deactivated'>Tilføj nyt website</button>
+            </div>
+
+          </div>
+
+        </div> 
+
+        <div></div>
+      </div>
+
+      </section>
       <section className='dashboard'>
         <img src="/src/assets/dashboards/your-morningscore.jpg" alt="" />
 
