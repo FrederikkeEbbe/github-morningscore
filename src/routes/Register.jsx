@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import "../styles/card.scss"
 import { Link } from 'react-router-dom'
-Link
+import Footer from '../components/Footer'
+
 const Register = () => {
   return (
     <>
@@ -28,6 +29,7 @@ const Register = () => {
       </form>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

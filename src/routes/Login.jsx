@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import "../styles/card.scss"
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const Login = () => {
   return (
@@ -21,6 +22,7 @@ const Login = () => {
           <p className='relink--copy'>©2024 All Rights Reserved. Morningscore ApS. Privacy policy</p>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

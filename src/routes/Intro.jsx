@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/card.scss"
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-
+import Footer from '../components/Footer'
 const Intro = () => {
   return (
     <>
@@ -26,6 +26,7 @@ const Intro = () => {
       </div>
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

@@ -1,8 +1,12 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
   background-color: #EDF1FA;
+  
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 
   .footer-column {
     margin: 0 24px;
@@ -57,6 +61,5 @@
       }
     }
   }
-  
 }
 
