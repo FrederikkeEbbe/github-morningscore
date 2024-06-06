@@ -9,6 +9,7 @@ import Avatar from "./routes/Avatar.jsx";
 import Intro from "./routes/Intro.jsx";
 import './styles/main.scss'
 
+
 const router = createBrowserRouter([
   {path: '/', element: <App />},
   {path: '/dashboard', element: <Dashboard />},
