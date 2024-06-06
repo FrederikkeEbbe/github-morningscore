@@ -13,8 +13,9 @@ const Register = () => {
       <p className='relink'>Har du allerede en konto? <Link to="/login">Login</Link></p>
       <h3>1 Det praktiske</h3>
       <p>Bare rolig, vi behøver ikke flere oplysninger for at kunne sende dig afsted</p>
-      <input type="text" placeholder="Hjemmeside link" />
-      <input type="email" placeholder="Email" />
+      <form>
+      <input type="email" placeholder="Mailadresse" />
+      <input type="text" placeholder="Indtast hjemmeside" />
       <div className='progress'>
         <Link to="/"> <button className='left'>&#10140;</button> </Link>
         <div className='progress__mini'>
@@ -24,6 +25,7 @@ const Register = () => {
         </div>
         <Link to="/Avatar"> <button>&#10140;</button> </Link>
       </div>
+      </form>
       </div>
     </div>
     </>

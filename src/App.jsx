@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ToolInclude from "./components/ToolInclude";
 
 function App() {
   return (
@@ -18,12 +19,13 @@ function App() {
         </div>
       </section>
       <section className="showreel-section">
-        <video controls>
-          <source src="/path/to/your/showreel.mp4" type="video/mp4" />
+        <video width="640" height="360" autoplay muted preload="auto" loop>
+          <source src="/src/assets/video/hero-loop.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
       </div>
+      <ToolInclude/>
       </>
   );
 };
