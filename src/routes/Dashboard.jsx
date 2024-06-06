@@ -21,6 +21,7 @@ const Dashboard = () => {
             
             <div className='dashboard-hero__info--header'>
               <h1>Velkommen tilbage kaptajn</h1>
+              <p>Hvad med at tage et kig på dine nye missioner?</p>
             </div>
 
             <div className='dashboard-hero__info--buttons'>
@@ -32,7 +33,13 @@ const Dashboard = () => {
 
         </div> 
 
-        <div></div>
+        <div className='progress-circle'>
+          <div className='progress-text'>
+            <div>Level 3</div>
+            <h2>546 XP</h2>
+            <div>54 XP til næste level</div>
+          </div>
+        </div>
       </div>
 
       </section>
