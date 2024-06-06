@@ -1,0 +1,33 @@
+.dashboard {
+  background-color: #fff;
+  padding: 64px 120px;
+  display: flex;
+  flex-direction:column;
+
+  @media (max-width: 780px){
+    padding: 32px 64px;
+  }
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    &--row{
+      
+      &--mid{
+        img {
+          width: 33%;
+        }
+      }
+
+      &--end{
+        #one {
+          width: 65%;
+        }
+        #two {
+          width: 34%;
+        }
+      }
+    }
+}
