@@ -4,6 +4,16 @@ import "../styles/card.scss"
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
+import avatarOriginal from '../assets/img/avatar_original.jpg';
+import avatarAqua from '../assets/img/avatar_aqua.jpg';
+import avatarOrange from '../assets/img/avatar_orange.jpg';
+import avatarLimegreen from '../assets/img/avatar_limegreen.jpg';
+import avatarPink from '../assets/img/avatar_pink.jpg';
+import avatarRed from '../assets/img/avatar_red.jpg';
+import avatarLightpurple from '../assets/img/avatar_lightpurple.jpg';
+import avatarYellow from '../assets/img/avatar_yellow.jpg';
+import avatarPurple from '../assets/img/avatar_purple.jpg';
+
 const Avatar = () => {
   const [selectedBox, setSelectedBox] = useState(null);
 
@@ -12,15 +22,15 @@ const Avatar = () => {
   };
 
 const images = [
-    '/src/assets/img/avatar_original.jpg',
-    '/src/assets/img/avatar_aqua.jpg',
-    '/src/assets/img/avatar_orange.jpg',
-    '/src/assets/img/avatar_limegreen.jpg',
-    '/src/assets/img/avatar_pink.jpg',
-    '/src/assets/img/avatar_red.jpg',
-    '/src/assets/img/avatar_lightpurple.jpg',
-    '/src/assets/img/avatar_yellow.jpg',
-    '/src/assets/img/avatar_purple.jpg'
+  avatarOriginal,
+  avatarAqua,
+  avatarOrange,
+  avatarLimegreen,
+  avatarPink,
+  avatarRed,
+  avatarLightpurple,
+  avatarYellow,
+  avatarPurple
 ]
   return (
     <>
