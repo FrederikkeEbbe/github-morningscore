@@ -11,34 +11,42 @@ body {
 
 .card {
   background: #fff;
-  padding: 20px;
+  padding: 24px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
-  margin: 20px;
+  text-align: left;
+  max-width: 360px;
+
 }
 
 input {
-  display: block;
-  width: 80%;
-  padding: 10px;
-  margin: 10px 20px;
-  border: 1px solid #ccc;
+  display: flex;
+  width: 94%;
+  padding: 12px;
+  margin: 8px 0px;
+  border: 1px solid #5b657b;
   border-radius: 4px;
 }
 
 button {
-  padding: 16px 24px;
+    padding: 11px 12px;
     background-color: #563ac9;
     color: #ffffff;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
-    font-weight: 600;
     
     &:hover {
       opacity: 0.7;
+    }
+
+    &.left{
+      transform: rotate(180deg);
+    }
+
+    &.login{
+      border-radius: 4px;
+      padding: 12px 24px;
     }
 }
 
@@ -72,9 +80,81 @@ button {
   justify-content: space-between;
 }
 
+h2 {
+  font-size: 32px;
+  color: #32345C;
+  margin: 0px;
+}
+
+h3 {
+  color: #563ac9;
+  margin-bottom: 0px;
+}
+
+p {
+  color: #525F7F;
+  margin: 8px 0px 32px;
+
+  &.relink {
+    font-size: 12px;
+
+    &--copy{
+    font-size: 12px;
+     margin: 24px 0 0 0 ;
+    }
+  }
+}
+
+.progress {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .progress__mini {
+    display: flex;
+    flex-direction: row;
+  
+    & * {
+      margin: 4px;
+    }
+  
+    &--empty {
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background-color: #edf1fa;
+    }
+  
+    &--full {
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background-color: #563ac9;
+    }
+  }
+  
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 24px 0;
+
+  & .relink {
+    margin: 0 0 0 4px;
+  }
+  & input {
+    width: 12px;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
-    padding: 10px;
+    padding: 24px;
   }
 
   .grid {
@@ -94,19 +174,19 @@ button {
 @media (max-width: 480px) {
   .card {
     width: 90%;
-    padding: 5px;
+    padding: 8px;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 8px;
   }
 
   .buttons {
     flex-direction: column;
     button {
       width: 100%;
-      margin: 5px 0;
+      margin: 8px 0;
     }
   }
 }

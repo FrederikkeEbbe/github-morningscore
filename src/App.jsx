@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <Navbar/>
-      <div className='landing-page'>  
+      <div className='landing-page'>
       <section className="hero-section">
         <div className="hero-content">
           <h5>DIT SEO EVENTYR</h5>
