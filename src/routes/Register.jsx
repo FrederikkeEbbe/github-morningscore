@@ -16,7 +16,7 @@ const Register = () => {
       <input type="text" placeholder="Hjemmeside link" />
       <input type="email" placeholder="Email" />
       <div className='progress'>
-      <Link to="/App"> <button className='left'>&#10140;</button> </Link>
+        <Link to="/"> <button className='left'>&#10140;</button> </Link>
         <div className='progress__mini'>
           <div className='progress__mini--full'></div>
           <div className='progress__mini--empty'></div>

@@ -15,7 +15,8 @@ const Avatar = () => {
     <Navbar/>
     <div className='card-container'>
     <div className="card">
-    <h2>Vælg din avatar</h2>
+    <h3>2 Vælg din avatar</h3>
+    <p>Du kan altid ændre den på et senere tidspunkt</p>
     <div className="grid">
       {Array.from({ length: 9 }).map((_, index) => (
         <div
@@ -25,10 +26,15 @@ const Avatar = () => {
         />
       ))}
     </div>
-    <div className="buttons">
-    <Link to="/register"> <button>Tilbage</button> </Link>
-    <Link to="/intro"> <button>Næste</button> </Link>
-    </div>
+    <div className='progress'>
+        <Link to="/register"> <button className='left'>&#10140;</button> </Link>
+        <div className='progress__mini'>
+          <div className='progress__mini--empty'></div>
+          <div className='progress__mini--full'></div>
+          <div className='progress__mini--empty'></div>
+        </div>
+        <Link to="/intro"> <button>&#10140;</button> </Link>
+      </div>
   </div>
   </div>
   </>
